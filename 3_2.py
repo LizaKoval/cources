@@ -1,2 +1,4 @@
 text = input("Введите текст, пожалуйста: ")
-letters = set(text)
+letters = {a: text.count(a) for a in set(text)}
+print(letters)
+
